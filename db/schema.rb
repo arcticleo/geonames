@@ -11,7 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104013255) do
+ActiveRecord::Schema.define(version: 20141104043319) do
+
+  create_table "geonames", force: true do |t|
+    t.string   "name",              limit: 200
+    t.string   "asciiname",         limit: 200
+    t.string   "alternatenames",    limit: 10000
+    t.decimal  "latitude",                        precision: 10, scale: 5
+    t.decimal  "longitude",                       precision: 10, scale: 5
+    t.string   "feature_class",     limit: 1
+    t.string   "feature_code",      limit: 10
+    t.string   "country_code",      limit: 2
+    t.string   "cc2",               limit: 60
+    t.string   "admin1_code",       limit: 20
+    t.string   "admin2_code",       limit: 20
+    t.string   "admin3_code",       limit: 20
+    t.string   "admin4_code",       limit: 20
+    t.integer  "population",        limit: 8
+    t.integer  "elevation",         limit: 4
+    t.integer  "dem",               limit: 4
+    t.string   "timezone",          limit: 40
+    t.datetime "modification_date"
+    t.datetime "created_at",                                               null: false
+    t.datetime "updated_at",                                               null: false
+  end
 
   create_table "postal_codes", force: true do |t|
     t.string   "country_code", limit: 2

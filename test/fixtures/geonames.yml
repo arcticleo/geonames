@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  asciiname: MyString
+  alternatenames: MyString
+  latitude: 9.99
+  longitude: 9.99
+  feature_class: MyString
+  feature_code: MyString
+  country_code: MyString
+  cc2: MyString
+  admin1_code: MyString
+  admin2_code: MyString
+  admin3_code: MyString
+  admin4_code: MyString
+  population: 1
+  elevation: 1
+  dem: 1
+  timezone: MyString
+  modification_date: 2014-11-03 20:33:19
+
+two:
+  name: MyString
+  asciiname: MyString
+  alternatenames: MyString
+  latitude: 9.99
+  longitude: 9.99
+  feature_class: MyString
+  feature_code: MyString
+  country_code: MyString
+  cc2: MyString
+  admin1_code: MyString
+  admin2_code: MyString
+  admin3_code: MyString
+  admin4_code: MyString
+  population: 1
+  elevation: 1
+  dem: 1
+  timezone: MyString
+  modification_date: 2014-11-03 20:33:19
