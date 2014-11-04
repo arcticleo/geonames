@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country_code: MyString
+  postal_code: MyString
+  place_name: MyString
+  admin1_name: MyString
+  admin1_code: MyString
+  admin2_name: MyString
+  admin2_code: MyString
+  admin3_name: MyString
+  admin3_code: MyString
+  latitude: 9.99
+  longitude: 9.99
+  accuracy: 1
+
+two:
+  country_code: MyString
+  postal_code: MyString
+  place_name: MyString
+  admin1_name: MyString
+  admin1_code: MyString
+  admin2_name: MyString
+  admin2_code: MyString
+  admin3_name: MyString
+  admin3_code: MyString
+  latitude: 9.99
+  longitude: 9.99
+  accuracy: 1
