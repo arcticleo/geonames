@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104043319) do
+ActiveRecord::Schema.define(version: 20141105172344) do
+
+  create_table "feature_codes", force: true do |t|
+    t.string   "feature_class", limit: 255
+    t.string   "feature_code",  limit: 255
+    t.string   "name",          limit: 255
+    t.string   "description",   limit: 255
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
 
   create_table "geonames", force: true do |t|
     t.string   "name",              limit: 200
