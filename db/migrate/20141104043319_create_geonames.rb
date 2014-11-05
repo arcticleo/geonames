@@ -1,6 +1,6 @@
 class CreateGeonames < ActiveRecord::Migration
   def change
-    create_table :geonames do |t|
+    create_table :geonames, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci' do |t|
       t.string :name, limit: 200
       t.string :asciiname, limit: 200
       t.string :alternatenames, limit: 10000

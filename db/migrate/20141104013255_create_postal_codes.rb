@@ -1,6 +1,6 @@
 class CreatePostalCodes < ActiveRecord::Migration
   def change
-    create_table :postal_codes do |t|
+    create_table :postal_codes, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci' do |t|
       t.string :country_code, limit: 2
       t.string :postal_code, limit: 20
       t.string :place_name, limit: 180
