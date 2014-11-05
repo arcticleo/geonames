@@ -72,7 +72,7 @@ namespace :geonames do
     parsed_data = download_and_return_tsv_rows_for url
     parsed_data.each_with_index do |data_row, index|
       if data_row.count == 3
-        puts "#{index + 1}/#{parsed_data.count} - #{data_row[0].to_s[0..1].sanitize} #{data_row[1].to_s[0..19].sanitize}"
+        puts "#{index + 1}/#{parsed_data.count} - #{data_row[0].to_s.sanitize} #{data_row[1].to_s[0..19].sanitize}"
         @feature_code = FeatureCode.find_or_initialize_by(
           feature_class: data_row[0].to_s.split('.').first.sanitize,
           feature_code: data_row[0].to_s.split('.').last.sanitize,

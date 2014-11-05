@@ -19,3 +19,6 @@ Populate database with postal codes for a particular country, specified with a c
 
     > rake geonames:postal_codes[US]
 
+Poulate database with feature codes used to classify geonames:
+
+    > rake geonames:feature_codes
